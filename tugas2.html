@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>Aplikasi kalkulator</h1>
+    <input id="angka1" type="number">
+    <input id="angka2" type="number"><br>
+    <button onclick="tambah()">+</button>
+    <button onclick="kurang()">-</button>
+    <button onclick="kali()">*</button>
+    <button onclick="bagi()">/</button>
+    <p id="hasil">hasil: </p>
+    <br><br>
+    <p><strong>Fawwas Aldy Nurramdhan Kaisar</strong></p>
+    <p><strong>5025221179</strong></p>
+    <p><strong>Teknik Informatika ITS</strong></p>
+    <script>
+        function tambah() {
+            let x = parseInt(document.getElementById("angka1").value);
+            let y = parseInt(document.getElementById("angka2").value);
+            let z = x + y;
+            document.getElementById("hasil").innerHTML = "hasil: " + z;
+        }
+        function kurang() {
+            let x = parseInt(document.getElementById("angka1").value);
+            let y = parseInt(document.getElementById("angka2").value);
+            let z = x - y;
+            document.getElementById("hasil").innerHTML = "hasil: " + z;
+        }
+        function kali() {
+            let x = parseInt(document.getElementById("angka1").value);
+            let y = parseInt(document.getElementById("angka2").value);
+            let z = x * y;
+            document.getElementById("hasil").innerHTML = "hasil: " + z;
+        }
+        function bagi() {
+            let x = parseInt(document.getElementById("angka1").value);
+            let y = parseInt(document.getElementById("angka2").value);
+            let z = x / y;
+            document.getElementById("hasil").innerHTML = "hasil: " + z;
+        }
+    </script>
+    
+</body>
+</html>
